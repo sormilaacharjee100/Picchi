@@ -1,0 +1,48 @@
+.blog_area{
+    .blog {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        column-gap: 30px;
+
+        .single_blog{
+            h4 {
+                text-transform: capitalize;
+            }
+            p {
+                margin: 20px 0px;
+            }
+            a {
+                text-transform: capitalize;
+                font-size: 18px;
+                transition: .3s;
+                &:hover{
+                    color: tomato;
+                }
+            }
+
+            .blog_img {
+                position: relative;
+    
+                img {
+                    width: 100%;
+    
+                    }
+                    .blog_meta {
+                        background-color: #fff;
+                        border: 1px solid #ddd;
+                        margin: 0px 25px;
+                        display: flex;
+                        justify-content: space-evenly;
+                        margin-top: -34px;
+                        padding: 20px 0px;
+                        margin-bottom: 20px;
+                        position: relative;
+                    }
+                
+            }
+        } 
+       
+    }
+}
+
+

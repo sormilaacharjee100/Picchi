@@ -1,0 +1,103 @@
+.testimonial_area{
+    @include bg;
+    color: #fff;
+
+    .testimonials {
+         .slick-arrow {
+            background-color: #ff7720;
+            border: 0;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            &.slick-prev {
+                left: -70px;
+            }
+            &.slick-next {
+                right: -70px;
+            }
+            i {
+                font-size: 30px;
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+            }
+        }
+
+        .slick-dots {
+            position: absolute;
+            transform: translateX(-50%);
+            left: 50%;
+            margin-top: 20px;
+
+            li {
+                display: inline-block;
+                margin: 0 8px;
+                &.slick-active{
+                    button {
+                        background-color: #ff7720;
+                        color: #fff;
+                    }
+                }
+
+                button {
+                    background-color: #ddd;
+                    width: 20px;
+                    height: 20px;
+                    border: 0;
+                    border-radius: 50%;
+                    color: #333;
+                    font-weight: bold;
+                    cursor:pointer;
+                }
+              
+            }
+        }
+        
+        
+    }
+
+        .single_testimonials {
+            text-align: center;
+            border: 1px solid #ff7720;
+            padding: 30px;
+
+            i {
+                font-size: 60px;
+            }
+
+            .authore_info {
+                display: flex;
+                align-items: center;
+                max-width: 200px;
+                margin: 0 auto;
+                justify-content: center;
+                margin-top: 20px;
+
+                img {
+                    max-width: 60px;
+                    border-radius: 50%;
+                }
+                h4 {
+                    text-transform: capitalize;
+                    text-align: left;
+                    margin-left: 19px;
+                    font-size: 20px;
+                    line-height: 23px;
+
+                    span {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        .slick-slide {
+            margin: 0 15px;
+        }
+    
+    
+}
+
+
+

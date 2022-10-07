@@ -1,0 +1,36 @@
+.subscriber_area{
+    @include bg;
+    color: #fff;
+
+    .subscriber {
+        max-width: 600px;
+        margin: 0 auto;
+        form {
+            position: relative;
+        }
+
+        input {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 50px;
+        }
+        input[type="submit"] {
+            width: auto;
+            position: absolute;
+            right: 0;
+            top: 0;
+            background-color: #ff7720;
+            border: 0;
+            padding: 16px 32px;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: #fff;
+            font-size: 13px;
+            cursor: pointer;
+        }
+    }
+}
+
+
+
